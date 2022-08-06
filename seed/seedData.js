@@ -34,21 +34,21 @@ const main = async () => {
         artist: artist._id,
         genre: "Alternative",
         release: 'May 11, 2005',
-        title: 'Demon Days',
+        title: 'Demon_Days',
         tracks: 15,
       },
       {
         artist: artist._id,
         genre: "Alternative",
         release: 'March 3, 2010',
-        title: 'Demon Days',
-        tracks: 15,
+        title: 'Plastic_Beach',
+        tracks: 16,
       },
       {
         artist: artist._id,
         genre: "Alternative",
         release: 'December 25, 2010',
-        title: 'The Fall',
+        title: 'The_Fall',
         tracks: 15,
       },
     ]);
@@ -377,8 +377,7 @@ const main = async () => {
       },
     ]);
 
-    console.log('Seeded Artists');
-
+    console.log('Seeded Data');
   } catch (error) {
     console.log(error.message);
   }
