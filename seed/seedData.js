@@ -24,10 +24,6 @@ const createSong = function (song) {
 
 const main = async () => {
   try {
-    // todo - remove delete statements once done
-    await models.Artist.deleteMany({});
-    await models.Album.deleteMany({});
-    await models.Song.deleteMany({});
     const artist = await createArtist({ name: 'Gorillaz' });
     const album = await createAlbum([
       {

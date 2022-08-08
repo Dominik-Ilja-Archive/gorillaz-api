@@ -13,7 +13,6 @@ const createArtist = function (artist) {
 const main = async () => {
   try {
     // todo - remove delete statements once done
-    await models.Artist.deleteMany({});
     const artist = await createArtist({ name: 'Septicflesh' });
 
     console.log('Seeded Data');
